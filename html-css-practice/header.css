@@ -1,0 +1,72 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start--top-bar {
+  display: flex;
+}
+
+.logo-page {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  color: rgb(29, 29, 29);
+}
+
+.dot {
+  text-decoration: none;
+  font-size: 30px;
+  color: red;
+}
+
+.middle--top-bar {
+  font-family: Inter;
+  font-size: 12px;
+  color: gray;
+  font-weight: 700;
+  display: flex;
+
+}
+
+.middle--top-bar p {
+  padding-right: 15px;
+}
+
+.style-home {
+  transition: color 0.15s;
+
+}
+
+.style-home:hover {
+  color: red;
+}
+
+
+.end--top-bar {
+  display: flex;
+
+}
+
+
+.button-sign-in {
+  font-family: Inter;
+  background-color: white;
+  padding: 8px 15px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 4px;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.button-sign-up {
+  font-family: Inter;
+  background-color: red;
+  padding: 8px 15px;
+  border: 1px solid red;
+  color: white;
+  border-radius: 4px;
+  font-size: 10px;
+}

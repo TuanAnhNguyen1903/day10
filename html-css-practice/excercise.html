@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="header.css">
+<title>Practice</title>
+
+<head>
+
+  <style>
+    .p {
+      font-family: Inter;
+    }
+
+
+    .page {
+      margin: 30px 120px;
+
+    }
+
+    .fisrt--body-part {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+
+    }
+
+    .rec-pink {
+      background-color: pink;
+      width: 600px;
+      height: 550px;
+      border-radius: 50px;
+      margin-top: 110px;
+    }
+
+    .rec-red {
+      background-color: red;
+      margin: 40px 30px;
+      height: 469px;
+      padding: auto;
+      border-radius: 25px;
+      position: relative;
+
+    }
+
+    .image-women {
+      width: 440px;
+      position: absolute;
+      bottom: -0.3px;
+      right: 15px;
+    }
+
+    .title-main {
+      font-family: Inter;
+      font-size: 50px;
+      font-weight: 700;
+      padding-bottom: 30px;
+    }
+
+    .title-main a {
+      text-decoration: none;
+      color: red;
+    }
+
+    .button-body-part {
+      color: red;
+      border: none;
+      background-color: rgba(255, 194, 194, 0.4);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 19px;
+      border-radius: 4px;
+      margin: 20px 0px;
+    }
+
+    .subtitle--body-part {
+      font-family: Inter;
+      font-size: 12px;
+      color: rgb(99, 99, 99);
+      margin-bottom: 30px;
+    }
+
+    .decor-input--body-part {
+      border: 1px solid red;
+      display: flex;
+      width: 300px;
+      border-radius: 7px;
+
+    }
+
+    .decor-input--body-part-input {
+      width: 100%;
+      border: none;
+      font-size: 10px;
+      background-color: rgba(255, 255, 255, 0);
+      padding-left: 10px;
+    }
+
+
+    .discovery-button {
+      font-size: 10px;
+      color: white;
+      background-color: rgb(243, 58, 58);
+      padding: 15px 17px;
+      border: none;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+
+    /*THE SECOND */
+
+    .second--body-part {
+      padding: auto;
+      font-size: 30px;
+      font-family: Inter;
+      align-items: center;
+      font-weight: 700;
+      padding-top: 180px;
+      padding-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .second--body-part p {
+
+
+      font-size: 13px;
+      font-family: Inter;
+      align-items: center;
+      font-weight: 400;
+      color: gray;
+      width: 500px;
+
+
+    }
+
+    .title-item {
+      font-family: Inter;
+      font-size: 17px;
+      font-weight: 700px;
+      color: red;
+      margin-top: 20px;
+    }
+
+    .opt-item {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .div-mini {
+      display: flex;
+      margin-right: 20px;
+    }
+
+    .style-minute {
+      font-family: Inter;
+      padding-left: 9px;
+      font-size: 12px;
+    }
+
+    .three--body-part {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 70px;
+      row-gap: 50px;
+    }
+
+    .title--four-body-part {
+      font-family: Inter;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .button-categories {
+      padding: 12px 15px;
+      color: red;
+      border: 1px solid red;
+      background-color: white;
+      font-weight: 700;
+      border-radius: 5px;
+    }
+
+    .categories--four-body {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 40px;
+    }
+
+    .img-categories {
+      width: 69px;
+    }
+
+    .title--five-body-part {
+      font-family: Inter;
+      text-align: center;
+      margin-top: 70px;
+    }
+
+    .field-button {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+
+
+    }
+
+    .button-submit {
+      padding: 15px 35px;
+      font-family: Inter;
+      border-radius: 4px;
+      border: none;
+      background-color: black;
+      color: white;
+      width: 120px;
+      margin-top: 25px;
+
+    }
+
+    .label-field {
+      font-weight: lighter;
+      font-family: Inter;
+      padding-bottom: 9px;
+    }
+
+    .input input {
+      font-family: Inter;
+      font-size: 14px;
+      padding: 25px 23px;
+      padding-right: 400px;
+      border: 1px solid rgb(222, 222, 222);
+      border-radius: 4px;
+      margin-right: 35px;
+
+
+
+
+    }
+
+    .input input::placeholder {
+      color: rgb(178, 176, 176);
+      font-weight: lighter;
+    }
+
+    .input-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+
+      margin-right: 48px;
+     
+
+    }
+
+    .input-1 input {
+      font-family: Inter;
+      font-size: 14px;
+      padding: 25px 23px;
+      border-radius: 4px;
+
+      border: 1px solid rgb(222, 222, 222);
+      padding-bottom: 400px;
+    }
+
+    .input-1 input::placeholder {
+      color: rgb(178, 176, 176);
+      font-weight: lighter;
+     
+    }
+
+    .fields--five-body-part {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .flex-fiels {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px 0px;
+    }
+    .input-1-1{
+   
+    }
+
+    .footer{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      padding: 20px 0px;
+      border-top: 1px solid rgb(227, 227, 227);
+    }
+  </style>
+</head>
+
+<body class="page">
+  <div class="top-bar">
+    <div class="start--top-bar">
+      <div class="logo-page">Fudo <a class="dot">.</a> </div>
+
+
+    </div>
+    <div class="middle--top-bar">
+      <p class="style-home">Home</p>
+      <p>Products</p>
+      <p>About Us</p>
+      <p style="padding-right:0"> Contact Us</p>
+    </div>
+
+    <div class="end--top-bar">
+      <img src="/picture/Icon/Cart.png" style="width: 24px; height:24px; margin-right: 10px;">
+      <button class="button-sign-in">Sign in</button>
+      <button class="button-sign-up">Sign up</button>
+    </div>
+  </div>
+  <div class="body-part">
+    <div class="fisrt--body-part">
+      <div class="title--body-part">
+        <button class="button-body-part">Quality Food</button>
+        <div class="title-main"> Fastest <a href="">Delivery</a> & Easy <a href="">Pickup</a></div>
+        <div class="subtitle--body-part">Best cooks and best delivery guys all at your service. Hot tasty food will
+          reach
+          you in 60 minutes.
+        </div>
+
+        <div class="decor-input--body-part">
+          <input class="decor-input--body-part-input" type="text" placeholder="Enter your delivery location">
+          <button class="discovery-button">Discovery</button>
+
+        </div>
+
+      </div>
+      <div class="rec-pink">
+        <div class="rec-red">
+          <img
+            src="picture/photo-satisfied-woman-holds-piece-pizza-feels-pleased-as-spends-free-time-with-friends-pizzeria-looks-happily-directly-wears-casual-outfit-isolated-yellow-wall-lunch-removebg 1.png"
+            class="image-women">
+        </div>
+      </div>
+    </div>
+    <div class="second--body-part">
+      Our Popular Dishes <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+    </div>
+    <div class="three--body-part">
+      <div class="item">
+        <div><img src="/picture/hambuger.png" style="border-radius: 20px; width: 350px;"></div>
+        <div class="title-item">Big and Juicy Wagyu Beef Cheeseburger</div>
+        <div class="opt-item">
+          <div class="div-mini">
+            <div><img src="/picture/Vector.png" alt=""></div>
+            <div class="style-minute">30 Minutes</div>
+          </div>
+          <div class="div-mini">
+            <div><img src="/picture/ForkKnife.png" alt=""></div>
+            <div class="style-minute">Noodles</div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="item">
+        <div><img src="/picture/hambuger.png" style="border-radius: 20px; width: 350px;"></div>
+        <div class="title-item">Big and Juicy Wagyu Beef Cheeseburger</div>
+        <div class="opt-item">
+          <div class="div-mini">
+            <div><img src="/picture/Vector.png" alt=""></div>
+            <div class="style-minute">30 Minutes</div>
+          </div>
+          <div class="div-mini">
+            <div><img src="/picture/ForkKnife.png" alt=""></div>
+            <div class="style-minute">Noodles</div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="item">
+        <div><img src="/picture/hambuger.png" style="border-radius: 20px; width: 350px;"></div>
+        <div class="title-item">Big and Juicy Wagyu Beef Cheeseburger</div>
+        <div class="opt-item">
+          <div class="div-mini">
+            <div><img src="/picture/Vector.png" alt=""></div>
+            <div class="style-minute">30 Minutes</div>
+          </div>
+          <div class="div-mini">
+            <div><img src="/picture/ForkKnife.png" alt=""></div>
+            <div class="style-minute">Noodles</div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="item">
+        <div><img src="/picture/hambuger.png" style="border-radius: 20px; width: 350px;"></div>
+        <div class="title-item">Big and Juicy Wagyu Beef Cheeseburger</div>
+        <div class="opt-item">
+          <div class="div-mini">
+            <div><img src="/picture/Vector.png" alt=""></div>
+            <div class="style-minute">30 Minutes</div>
+          </div>
+          <div class="div-mini">
+            <div><img src="/picture/ForkKnife.png" alt=""></div>
+            <div class="style-minute">Noodles</div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="item">
+        <div><img src="/picture/hambuger.png" style="border-radius: 20px; width: 350px;"></div>
+        <div class="title-item">Big and Juicy Wagyu Beef Cheeseburger</div>
+        <div class="opt-item">
+          <div class="div-mini">
+            <div><img src="/picture/Vector.png" alt=""></div>
+            <div class="style-minute">30 Minutes</div>
+          </div>
+          <div class="div-mini">
+            <div><img src="/picture/ForkKnife.png" alt=""></div>
+            <div class="style-minute">Noodles</div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="item">
+        <div><img src="/picture/hambuger.png" style="border-radius: 20px; width: 350px;"></div>
+        <div class="title-item">Big and Juicy Wagyu Beef Cheeseburger</div>
+        <div class="opt-item">
+          <div class="div-mini">
+            <div><img src="/picture/Vector.png" alt=""></div>
+            <div class="style-minute">30 Minutes</div>
+          </div>
+          <div class="div-mini">
+            <div><img src="/picture/ForkKnife.png" alt=""></div>
+            <div class="style-minute">Noodles</div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="four--body-part">
+      <div class="title--four-body-part">
+        <h1>Categories</h1>
+        <div><button class="button-categories">View All Categories</button></div>
+
+      </div>
+      <div class="categories--four-body">
+        <div style=" text-align: center"><img src="/picture/image 20.png" class="img-categories">
+          <p style="font-family: Inter;  font-size: 14px;">Vegan</p>
+        </div>
+        <div style=" text-align: center"><img src="/picture/image 21.png" class="img-categories">
+          <p style="font-family: Inter;  font-size: 14px;">Meat</p>
+        </div>
+        <div style=" text-align: center"><img src="/picture/image 22.png" class="img-categories">
+          <p style="font-family: Inter;  font-size: 14px;">Dessert</p>
+        </div>
+        <div style=" text-align: center"><img src="/picture/image 23.png" class="img-categories">
+          <p style="font-family: Inter;  font-size: 14px;">Lunch</p>
+        </div>
+        <div style=" text-align: center"><img src="/picture/image 24.png" class="img-categories">
+          <p style="font-family: Inter;  font-size: 14px;">Chocolate</p>
+        </div>
+        <div style=" text-align: center"><img src="/picture/image 25.png" class="img-categories">
+          <p style="font-family: Inter;  font-size: 14px;">Breakfast</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="five--body-part">
+      <h1 class="title--five-body-part">Contac Us</h1>
+
+      <div class="fields--five-body-part">
+
+        <div class="flex-fiels">
+          <div class="input">
+            <div class="label-field">NAME</div>
+            <input type="text" placeholder="Enter your name...">
+          </div>
+          <div class="input">
+            <div class="label-field">EMAIL ADDRESS</div>
+            <input style="margin-right: 0" type="text" placeholder="Your email address...">
+          </div>
+          <div class="input">
+            <div class="label-field">SUBJECT</div>
+            <input type="text" placeholder="Your subject...">
+          </div>
+          <div class="input">
+            <div class="label-field">EQUITY TYPE</div>
+            <input style="margin-right: 0;" type="text" placeholder="Avertising...">
+          </div>
+        </div>
+        <div class="field-button">
+          <div class="input-1">
+            <div class="label-field">MESSAGES</div>
+            <div style="border-radius: 4px;"><input style="width: 100%; " type="text" placeholder="Enter your messages..."> </div>
+          </div>
+
+          <div style="display: flex; justify-content: center;"> <button class="button-submit">Submit</button></div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="logo-page">Fudo <a class="dot">.</a> </div>
+    <div class="middle--top-bar">
+      <p class="style-home">Home</p>
+      <p>Products</p>
+      <p>About Us</p>
+      <p style="padding-right:0"> Contact Us</p>
+    </div>
+
+  </div>
+
+
+</body>
+
+</body>
+
+</html>
